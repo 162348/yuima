@@ -279,3 +279,11 @@ setClass(
     fixed = "numeric"
   )
 )
+
+setClass(
+  "adastan",
+  slots = c(
+    fit = "ANY",
+    code = "character"
+  )
+)

@@ -85,6 +85,13 @@ importFrom(calculus,"%sum%")
 importFrom(Matrix, "bdiag")
 importFrom(calculus, "derivative")
 
+# added by Hirofumi Shiba on Mar. 28, 2025
+importFrom(glue, glue_data)
+importFrom(rstan, stan)
+importFrom(rstan, rstan_options)
+importFrom(cmdstanr, cmdstan_model)
+importFrom(cmdstanr, write_stan_file)
+
 exportClasses("yuima",
 "yuima.data",
 "yuima.law",
@@ -214,6 +221,7 @@ export(get.zoo.data)
 ##export(ql,rql,ml.ql)
 ##export(rql)
 export(adaBayes)
+export(adaStan)
 export(lseBayes)
 export(rIG, rNIG, rbgamma, rvgamma, rstable,rpts,rnts, rGIG, rGH) ## random number generators in rng.R
 export(dIG, dNIG, dbgamma, dvgamma, dGIG, dGH) ## pdfs in rng.R
